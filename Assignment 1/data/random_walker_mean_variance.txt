@@ -1,0 +1,13 @@
+True Mean = 0
+True Variance = 0.001
+
+Calculated Mean = -1.3860e-04
+Calculated Variance = 0.001(Approximate)
+
+Error in mean:
+
+|Calculated Mean - True Mean| = 1.3860e-04
+
+Error in variance:
+
+|Calculated Variance - True Variance| = 4.7684e-06 

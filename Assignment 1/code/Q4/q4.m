@@ -29,6 +29,8 @@ M=randx(1,100000);
 
 %PLOTTING HISTOGRAM
 h = histogram(M,200);
+xlabel 'X values'
+ylabel 'Frequency Values'
 
 %PLOTTING CDF
 bins = h.NumBins;
@@ -62,7 +64,7 @@ axis([-1.2,1.2 ,-.1,1.1]);
 
 %PLOTTING HISTOGRAMS
 N1=[1,2,4,8,16,32,64];
-N=64;
+N=1;
 Y = randy(N,1,1000);
 h = histogram(Y,24);
 value = h.Values;

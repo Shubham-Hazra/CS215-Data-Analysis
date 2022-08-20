@@ -1,0 +1,1 @@
+Gumbel Variance = 6.5795

@@ -15,7 +15,7 @@ y=exp(-((x-u)/b + exp(-(x-u)/b)))/b;
 f = reimann_sum(y,-5,15,2000);
 
 %PLOTTING
-plot(x,f,'b');
+plot(x,f,'b-');
 
 %SETTING PLOT FEATURES
 xlabel 'X values';

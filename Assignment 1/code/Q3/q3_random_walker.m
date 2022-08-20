@@ -10,7 +10,7 @@ for i = 1:10000
 end
 
 %PLOTTING A HISTOGRAM OF FINAL LOCATION
-histogram(final);
+h=histogram(final,40);
 xlabel 'LOCATION'
 ylabel 'NUMBER OF WALKERS'
 

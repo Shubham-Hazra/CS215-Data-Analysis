@@ -55,7 +55,7 @@ end
 z = linspace(0,25,26);
 
 %PLOTTING Z
-plot(z,Z);
+plot(z,Z,'-o');
 grid on
 xlabel 'K Values'
 ylabel 'PMF Values'
