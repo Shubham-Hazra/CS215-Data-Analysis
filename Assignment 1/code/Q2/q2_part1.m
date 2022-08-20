@@ -1,5 +1,7 @@
 %CONSIDERING TWO POISSON RANDOM VARIABLES
 
+rng("default")
+
 %RANDOM VARIABLE X
 lambda_x = 3;
 
@@ -86,4 +88,7 @@ hold off
 Z_diff = Z-Z_;
 plot(z,Z_diff);
 grid on
-xlabel 'K VALUE'
+xlabel 'K Values'
+ylabel 'Difference in theoretical and analytical'
+title 'DIFFERENCE'
+

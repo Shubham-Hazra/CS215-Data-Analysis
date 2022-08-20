@@ -92,4 +92,24 @@ xlabel 'K Values'
 ylabel 'Difference in theoretical and analytical'
 title 'DIFFERENCE'
 
+%DEFINING Y ANALYTICALLY
+Y = poissrnd(lambda_y,1,1000000);
 
+%DEFINING PROBABILITY PARAMETER
+p = 0.8;
+
+%DEFINING THINNED Z
+Z = binornd(Y,p);
+h=histogram(Z);
+z_bins = h.NumBins;
+z1 = h.Values;
+Z_thin = zeros(1,26);
+for i=1:z_bins
+    Z_thin(i)=z1(i);
+end
+z=linspace(0,25,26);
+plot(z,Z_thin,'bo-');
+grid on 
+xlabel 'K Values'
+ylabel 'PMF Values'
+title 'THINNED POISSON VARIABLE Z'
