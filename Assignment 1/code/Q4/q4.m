@@ -79,7 +79,7 @@ x = linspace(-1,1,1000);
 for i=1:length(N1)
      Y = randy(i,1,100000);
      h = histogram(Y,1000);
-     cdf_plots(i,:)=h.Values/1000;
+     cdf_plots(i,:)=h.Values/2500;
 end
 for i=1:length(N1)
     plot(x,reimann_sum(cdf_plots(i,:),1,24,1000));
