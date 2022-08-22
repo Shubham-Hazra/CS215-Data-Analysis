@@ -1,0 +1,16 @@
+var1 = variance(x,y,-10,20,10000); //Variance calculated between -10 and 20
+var2 = variance(x,y,-100,200,10000); // Between -100 and 200
+var3 = variance(x,y,-500,1000,10000); // -500 and 1000
+var4 = variance(x,y,-1000,2000,10000); // -1000 and 2000
+
+Output:
+9.4493
+
+94.4492
+
+471.2728
+
+940.1129
+
+Clearly the variance diverges as we take larger intervals and hence variance
+is undefined.

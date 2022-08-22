@@ -1,0 +1,1 @@
+Laplace Variance = 7.9996 (Calculated)
