@@ -74,15 +74,15 @@ ylabel 'Frequency Values'
 title 'RANDOM VARIABLE Y'
 
 %PLOTTING CDF
-cdf_plots = zeros(length(N1),24);
-x = linspace(-1,1,24);
+cdf_plots = zeros(length(N1),1000);
+x = linspace(-1,1,1000);
 for i=1:length(N1)
-     Y = randy(N,1,1000);
-     h = histogram(Y,24);
+     Y = randy(i,1,100000);
+     h = histogram(Y,1000);
      cdf_plots(i,:)=h.Values/1000;
 end
 for i=1:length(N1)
-    plot(x,reimann_sum(cdf_plots(i,:),1,24,24));
+    plot(x,reimann_sum(cdf_plots(i,:),1,24,1000));
     hold on
 end
 hold off
